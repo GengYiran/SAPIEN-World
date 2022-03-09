@@ -81,6 +81,9 @@ def demo(fix_root_link, balance_passive_force):
 	obj_pc = sample_pc(v=vs, f=fs, n_points=4096*100)
 	print(obj_pc)
 	obj_pc = np.array(obj_pc)
+
+	np.save("PCfiles/pot_PC.npy", obj_pc)
+
 	point_cloud = open3d.geometry.PointCloud()
 	point_cloud.points = open3d.utility.Vector3dVector(obj_pc)
 	open3d.visualization.draw_geometries([point_cloud])
