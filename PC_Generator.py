@@ -144,9 +144,9 @@ class PC_Generator:
 ## points number to sample
 n_points = 4096*100
 ## URDF path
-URDF_path = "/home/gyr/file/Sapien-World/assets/mjcf/102080/mobility.urdf"
+URDF_path = "/home/gyr/file/Sapien-World/assets/mjcf/100023/mobility.urdf"
 ## the object name
-obj_name='pot3'
+obj_name='pot2'
 ## the folder path
 save_path = "/home/gyr/file/Sapien-World/PCfiles/{}_PC_all_parts/".format(obj_name)
 
